@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>AppoloMedical</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+  <body style="background-color:#33B5FF;">
+   <a class="navbar-brand-left" href="adminpage.php"><span class="glyphicon glyphicon-home"></span><strong>AppoloMedical</strong></a>
+    <center>
+	<form style="margin-top:20px;" method="post" action="http://localhost/projappolo/updatehealthtips.php">
+	     <div class="form-group">
+		 <h4><strong>Title</strong><input type="text" name="title" required><strong>Writer </strong><input type="text" name="writer" required></input>
+		 </div>
+	     <textarea rows="25"style="width:100%;" placeholder="Write your health tips here." name="healthtips" required></textarea><br/>
+		 <input type="submit" class="btn btn-primary" value="submit">
+	</form>
+	
+	</center>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
